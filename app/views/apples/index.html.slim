@@ -1,0 +1,6 @@
+h1 Appleモデル一覧
+table.table#apples
+  / = render partial: 'apple', locals: {apple: @apple}
+  = render @apples
+= link_to "データを追加する", new_apple_path, remote:true
+#apple-form
